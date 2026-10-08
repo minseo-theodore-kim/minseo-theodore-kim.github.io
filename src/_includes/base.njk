@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} — {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+<meta name="description" content="{{ description or takeaway or site.tagline }}">
+
+<meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{{ title or site.name }}">
+<meta property="og:description" content="{{ description or takeaway or site.tagline }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>⚽</text></svg>">
+</head>
+<body>
+
+{{ content | safe }}
+
+<footer>
+  <div class="wrap bio">
+    <div>
+      <p class="bio-name">{{ site.author }}</p>
+      <p class="bio-role">{{ site.bio }}</p>
+    </div>
+    <div class="bio-links">
+      <a href="https://instagram.com/{{ site.instagram }}" rel="me">@{{ site.instagram }}</a>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

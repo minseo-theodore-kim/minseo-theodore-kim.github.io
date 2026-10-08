@@ -1,0 +1,29 @@
+---
+layout: base.njk
+---
+<main class="wrap">
+  <header class="masthead">
+    <h1>Theodore<br><em>on Sport</em></h1>
+    <p class="tagline">{{ site.tagline }}</p>
+    <p class="about"><strong>{{ site.author }}</strong> — {{ site.about }}</p>
+  </header>
+
+  <ul class="list">
+    {% for post in collections.writing %}
+    <li>
+      <a class="entry" href="{{ post.url }}">
+        <span class="entry-date">{{ post.date | readableDate }}</span>
+        <span>
+          <h2 class="entry-title">{{ post.data.title }}</h2>
+          {% if post.data.takeaway %}<p class="entry-take">{{ post.data.takeaway }}</p>{% endif %}
+          <span class="entry-meta">
+            {% for t in post.data.tags | realTags %}<span class="tag{% if not loop.first %} alt{% endif %}">{{ t }}</span>{% endfor %}
+          </span>
+        </span>
+      </a>
+    </li>
+    {% else %}
+    <li><p class="empty">First piece coming shortly.</p></li>
+    {% endfor %}
+  </ul>
+</main>
