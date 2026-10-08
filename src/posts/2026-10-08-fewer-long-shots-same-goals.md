@@ -15,7 +15,7 @@ data:
   Period: "Premier League, 2016-17 to 2025-26"
   Sample: "200 club-seasons, about 96,000 shots"
   Tools: "R (ggplot2)"
-  Code: "github.com/minseo-theodore-kim/minseo-theodore-kim.github.io"
+  Code: "[Repository, data and R script](https://github.com/minseo-theodore-kim/minseo-theodore-kim.github.io/tree/main/analysis)"
 ---
 
 *What ten seasons of public data can still tell us about a claim built on data that is no longer public.*

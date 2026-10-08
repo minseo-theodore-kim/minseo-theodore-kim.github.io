@@ -25,6 +25,17 @@ module.exports = function (eleventyConfig) {
     (tags || []).filter((t) => t !== "posts")
   );
 
+ // Data & method values: turn [text](url) or a bare URL into a link
+  eleventyConfig.addFilter("dataValue", (v) => {
+    const s = String(v);
+    const md = s.match(/^\[([^\]]+)\]\((https?:\/\/[^)]+)\)$/);
+    if (md) return `<a href="${md[2]}">${md[1]}</a>`;
+    if (/^https?:\/\//.test(s)) {
+      return `<a href="${s}">${s.replace(/^https?:\/\//, "")}</a>`;
+    }
+    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  });
+
   // posts that are not drafts, newest first
   eleventyConfig.addCollection("writing", (api) =>
     api.getFilteredByTag("posts")

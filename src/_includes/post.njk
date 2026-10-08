@@ -22,7 +22,7 @@ layout: base.njk
   <div class="databox">
     <span class="eyebrow">Data &amp; method</span>
     <dl>
-      {% for k, v in data %}<dt>{{ k }}</dt><dd>{{ v }}</dd>{% endfor %}
+      {% for k, v in data %}<dt>{{ k }}</dt><dd>{{ v | dataValue | safe }}</dd>{% endfor %}
     </dl>
   </div>
   {% endif %}

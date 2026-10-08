@@ -195,7 +195,9 @@ a{color:inherit}
 .databox .eyebrow{display:block; margin-bottom:.6rem; color:var(--muted)}
 .databox dl{display:grid; grid-template-columns:5.5rem 1fr; gap:.15rem .9rem; margin:0}
 .databox dt{color:var(--faint)}
-.databox dd{margin:0; color:var(--ink)}
+.databox dd{margin:0; color:var(--ink); overflow-wrap:anywhere}
+.databox a{color:var(--accent); text-decoration:underline; text-underline-offset:2px}
+.databox a:hover{color:#095C34}
 @media (max-width:520px){
   .databox dl{grid-template-columns:1fr; gap:0}
   .databox dt{margin-top:.5rem}
