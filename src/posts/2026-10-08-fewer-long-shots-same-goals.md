@@ -43,9 +43,9 @@ Goals (Gls) excluded own goals. FBref's `Gls` only counts goals scored by a club
 
 ## Result 1
 
-Shot volume was 25.60 per match in 2016-17 and 24.99 in 2025-26 — slightly lower at the end than at the start. A straight line fitted through all ten seasons, however, rises: +0.115 per season, or +1.03 across the window (R² = 0.132).
+2016-17 marked 25.60, while 2025-26 marked 24.99. The latter end is lower. However, when a straight line is fitted through the ten seasons, the slope is positive. The increase is +0.115 per season, +1.03 in aggregate over ten seasons, with R² = 0.132. 
 
-The two measures disagree in sign, and that disagreement is the finding. A series whose direction depends on whether you compare its endpoints or fit a line through it is a series that has not moved. The only conspicuous feature is 2023-24, which peaked at 27.32 before returning to 25.70 and 24.99. The low was 23.87, in the crowdless 2020-21 season.
+The fact that the signs of the two methods are different is the finding. A series whose direction depends on whether you compare its endpoints or fit a line through it is a series that has not moved. The only notable movement is the 27.32 of 2023-24. After that it returns to 25.70 and then 24.99. The lowest is 23.87 of 2020-21, which was the season played without crowds. 
 
 Prediction B does not hold.
 
@@ -105,5 +105,3 @@ In the next article, I am going to divide in and outside the box using the Under
 **Source.** David Segar, "Analysis: Why are players shooting less from long range this season?", Opta Analyst / Premier League, 29 March 2025.
 
 **Data and code.** All ten CSV exports and the R script that produced these figures are in [this site's repository](https://github.com/minseo-theodore-kim/minseo-theodore-kim.github.io/tree/main/analysis).
-
-**Note on tools.** Analysis and figures in R. Drafted in English with AI assistance for error-checking and editing.
