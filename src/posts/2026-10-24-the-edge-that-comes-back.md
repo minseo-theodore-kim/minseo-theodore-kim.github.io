@@ -66,6 +66,8 @@ As in the third piece, I did not take the algebra on trust and checked it by a s
 
 Two worlds were built. In World A no club is better than any other. In World B every club holds a fixed ability it never loses, spread as widely as the real differences measured above. Each world was run 1,500 times.
 
+Goals per shot is left out of this table. It is the product of the other two, so World B does not fix its spread directly and the comparison would not mean anything.
+
 | Measure | World A, no skill | World B, fixed skill | Observed |
 |---|---|---|---|
 | Accuracy | −0.006 (−0.169 to +0.164) | +0.330 (+0.121 to +0.537) | +0.336 |
